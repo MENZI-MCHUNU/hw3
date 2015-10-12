@@ -6,7 +6,7 @@
 *  Since our meta-data block is already aligned, the only thing we need
 *  is to align the size of the data block.
 *
-*  We need to write a function is_Valid_addr to check if a pointer in pointing the correct block address.
+*  I need to write a function is_Valid_addr to check if a pointer in pointing the correct block address.
 *  Lets say we have field ptr pointing to the field data, if b->ptr == b->data, then b is probably (very probably)
 *  a valid block. So, the functions that verify and access the block corresponding to a given  correct pointer.
 *
@@ -42,7 +42,7 @@
 *  If there’s no more block, we go back the original state (set heap_ptr to NULL.)
 *  If the pointer is not valid, we silently do nothing
 *  
-*  We need another function called mm_realloc for resizing block. 
+*  I need another function called mm_realloc for resizing block. 
 *  We allocate a new block of the given size using mm_malloc function
 *  Then Copy data from the old one to the new one, Free the old block and return the new pointer.
 *  If the size doesn’t change, or the extra-available size is sufficient, we do nothing;
